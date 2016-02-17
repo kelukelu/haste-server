@@ -592,16 +592,6 @@ haste.prototype.configureButton = function(options) {
       options.action();
     }
   });
-  // Show the label
-  options.$where.mouseenter(function(evt) {
-    $('#box3 .label').html(options.label);
-    $('#box3 .shortcut').html(options.shortcutDescription || '&nbsp;');
-  });
-  // Hide the label
-  options.$where.mouseleave(function(evt) {
-    $('#box3 .label').html('&nbsp;');
-    $('#box3 .shortcut').html('&nbsp;');
-  });
 };
 
 // Configure keyboard shortcuts for the textarea
